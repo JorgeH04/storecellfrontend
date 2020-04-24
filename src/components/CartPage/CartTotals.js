@@ -16,10 +16,10 @@ export default function CartTotals({ history }) {
                   className="btn btn-outline-danger text-capitalize mb-4"
                   onClick={clearCart}
                 >
-                  clear cart
+                  Limpiar
                 </button>
                 <h3>subtotal : ${cartSubTotal}</h3>
-                <h3>tax : ${cartTax}</h3>
+                <h3>IVA : ${cartTax}</h3>
                 <h3>total : ${cartTotal}</h3>
                 
               </div>

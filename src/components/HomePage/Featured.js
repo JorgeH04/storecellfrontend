@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import Title from "../Title";
 //import { ProductConsumer } from "../../context";
 import Product from "../Product";
@@ -8,7 +8,7 @@ export default function Featured() {
     <section className="py-5">
       <div className="container">
         {/* title */}
-        <Title title="featured products" center="true" />
+        <Title title="destacadas" center="true" />
         {/* products */}
         <div className="row my-5">
             {//value => {            <ProductConsumer>
@@ -23,9 +23,7 @@ export default function Featured() {
         {/* button */}
         <div className="row mt-5">
           <div className="col text-center">
-            <Link to="/products" className="main-link">
-              our products
-            </Link>
+            
           </div>
         </div>
       </div>

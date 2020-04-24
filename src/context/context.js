@@ -48,7 +48,8 @@ class ProductProvider extends Component {
 
   // component did mount
   async componentDidMount() {
-    axios.get('http://localhost:4000/api/post')
+    //axios.get('http://localhost:4000/api/post')
+    axios.get('https://guitarbackend.herokuapp.com/api/post')
       //.then(data => data.json())
       .then(data =>{
       //  console.log(data);

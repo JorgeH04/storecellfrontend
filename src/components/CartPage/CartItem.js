@@ -21,7 +21,7 @@ export default function CartItem({
       {/* end of image */}
       {/* title */}
       <div className="col-10 mx-auto col-lg-2 ">
-        <span className="d-lg-none">product :</span> {title}
+        <span className="d-lg-none">producto :</span> {title}
       </div>
       {/* end of title */}
       {/* price  */}

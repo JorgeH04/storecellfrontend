@@ -1,6 +1,8 @@
 import React from "react";
 import Title from "../Title";
-import aboutBcg from "../../images/aboutBcg.jpeg";
+//import aboutBcg from "../../images/aboutBcg.jpeg";
+import salaacus from "../../images/salaacus.jpg";
+
 export default function Info() {
   return (
     <section className="py-5">
@@ -8,14 +10,14 @@ export default function Info() {
         <div className="row">
           <div className="col-10 mx-auto col-md-6 my-3">
             <img
-              src={aboutBcg}
+              src={salaacus}
               className="img-fluid img-thumbnail"
               alt="iphone"
               style={{ background: "var(--darkGrey)" }}
             />
           </div>
           <div className="col-10 mx-auto col-md-6 my-3 p-3">
-            <Title title="our store" />
+            <Title title="Nuestro Negocio" />
             <p className="text-lead text-muted my-3">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque
               impedit ab deleniti doloremque quia quis libero deserunt
@@ -26,9 +28,7 @@ export default function Info() {
               impedit ab deleniti doloremque quia quis libero deserunt
               repellendus sint earum?
             </p>
-            <button style={{ marginTop: "2rem" }} className="main-link">
-              more info
-            </button>
+           
           </div>
         </div>
       </div>

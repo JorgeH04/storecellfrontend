@@ -12,7 +12,7 @@ export default class Footer extends Component {
                 <div className="row">
                   <div className="col-md-6">
                     <p className="text-capitalize">
-                      copyright &copy; tech store {new Date().getFullYear()}.
+                      copyright &copy; guitarras axios {new Date().getFullYear()}.
                       all rights reserved
                     </p>
                   </div>

@@ -5,7 +5,7 @@ export default function Contact() {
     <section className="py-5">
       <div className="row">
         <div className="col-10 mx-auto col-md-6 my-3">
-          <Title title="contact us" />
+          <Title title="Contactanos" />
           <form className="mt-5">
             {/* first name */}
             <div className="form-group">
@@ -47,7 +47,7 @@ export default function Contact() {
             <div className="form-group mt-3">
               <input
                 type="submit"
-                value="send"
+                value="enviar"
                 className="form-control bg-primary text-white"
               />
             </div>

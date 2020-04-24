@@ -21,7 +21,8 @@ export default class Update extends Component {
     }
 
    addPost(e){
-       fetch('http://localhost:4000/api/post/add',{
+       //fetch('http://localhost:4000/api/post/add',{
+        fetch('https://guitarbackend.herokuapp.com/api/post/add',{
          method: 'POST',
          body: JSON.stringify(this.state),
          headers: {
@@ -46,9 +47,10 @@ export default class Update extends Component {
     this.fetchPosts();
 
   }
-
+  //https://guitarbackend.herokuapp.com/api/post
    fetchPosts() {
-    fetch('http://localhost:4000/api/post')
+    //fetch('http://localhost:4000/api/post')
+    fetch('https://guitarbackend.herokuapp.com/api/post')
       .then(res => res.json())
       .then(data => {
         console.log(data);
@@ -60,7 +62,8 @@ export default class Update extends Component {
   }
 
   deletePost(_id){ 
-        fetch(`http://localhost:4000/api/post/delete/${_id}`, {
+        //fetch(`http://localhost:4000/api/post/delete/${_id}`, {
+          fetch(`https://guitarbackend.herokuapp.com/api/post/delete/${_id}`, {
           method: 'DELETE',
           headers: {
             'Accept': 'application/json',

@@ -6,22 +6,22 @@ export const linkData = [
   },
   {
     id: 2,
-    text: "about",
+    text: "Nosotros",
     path: "/about"
   },
   {
     id: 3,
-    text: "products",
+    text: "productos",
     path: "/products"
   },
   {
     id: 4,
-    text: "contact",
+    text: "contacto",
     path: "/contact"
   },
   {
     id: 5,
-    text: "cart",
+    text: "carro",
     path: "/cart"
   }
 ];

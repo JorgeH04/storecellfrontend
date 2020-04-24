@@ -16,7 +16,7 @@ export default function Products() {
               {/* title                    total products : {filteredProducts.length} */}
               <ProductFilter />   
 
-              <Title center title="our products" />
+              <Title center title="Nuestras Guitarras" />
               <div className="row">
                 <div className="col-10 mx-auto">
                   <h6 className="text-title">

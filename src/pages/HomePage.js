@@ -12,7 +12,7 @@ export default function HomePage() {
           className="main-link"
           style={{ marginTop: "2rem" }}
         >
-          nuestras guitarras
+          ver guitarras
         </Link>
       </Hero>
       <Services />
