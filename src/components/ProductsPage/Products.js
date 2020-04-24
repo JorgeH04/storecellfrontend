@@ -1,9 +1,10 @@
 import React from "react";
-import { ProductConsumer } from "../../context";
+import { ProductConsumer } from "../../context/context";
 import styled from "styled-components";
 import Title from "../Title";
 import Product from "../Product";
-import ProductFilter from "./ProductFilter";
+import ProductFilter from "./ProductFilter";     
+
 export default function Products() {
   return (
     <ProductConsumer>
@@ -12,14 +13,14 @@ export default function Products() {
         return (
           <ProductsWrapper className="py-5">
             <div className="container">
-              {/* title */}
+              {/* title                    total products : {filteredProducts.length} */}
+              <ProductFilter />   
 
               <Title center title="our products" />
-              <ProductFilter />
               <div className="row">
                 <div className="col-10 mx-auto">
                   <h6 className="text-title">
-                    total products : {filteredProducts.length}
+
                   </h6>
                   <hr />
                 </div>

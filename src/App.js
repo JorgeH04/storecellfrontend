@@ -8,7 +8,7 @@ import Products from "./pages/ProductsPage";
 import Contact from "./pages/ContactPage";
 import Cart from "./pages/CartPage";
 import SingleProduct from "./pages/SingleProductPage";
-import Default from "./pages/Default";
+//import Default from "./pages/Default";
 
 import { Route, Switch } from "react-router-dom";
 
@@ -16,6 +16,12 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import SideCart from "./components/SideCart";
+//                 <Route component={Default} />
+   
+
+
+import Update from "./Update";
+
 class App extends Component {
   render() {
     return (
@@ -30,7 +36,8 @@ class App extends Component {
           <Route path="/products" exact component={Products} />
           <Route path="/products/:id" exact component={SingleProduct} />
           <Route path="/cart" component={Cart} />
-          <Route component={Default} />
+          <Route path="/update" component={Update}  />
+
         </Switch>
         <Footer />
       </>

@@ -1,5 +1,5 @@
 import React from "react";
-import { ProductConsumer } from "../../context";
+import { ProductConsumer } from "../../context/context";
 //import PayPalBtn from "./PayPalBtn";
 export default function CartTotals({ history }) {
   return (

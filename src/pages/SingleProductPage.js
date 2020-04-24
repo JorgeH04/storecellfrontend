@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Hero from "../components/Hero";
 import singleProductImg from "../images/singleProductBcg.jpeg";
-import { ProductConsumer } from "../context";
+import { ProductConsumer } from "../context/context";
 export default function SingleProductPage() {
   return (
     <>
@@ -13,7 +13,7 @@ export default function SingleProductPage() {
           if (loading) {
             console.log("hello loading");
 
-            return <h1>product loading...</h1>;
+            return <h1>producto cargando...</h1>;
           }
 
           const {

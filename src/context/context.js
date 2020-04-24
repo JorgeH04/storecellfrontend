@@ -48,13 +48,30 @@ class ProductProvider extends Component {
 
   // component did mount
   async componentDidMount() {
-    axios.get('http://localhost:4000')
+    axios.get('http://localhost:4000/api/post')
       //.then(data => data.json())
       .then(data =>{
       //  console.log(data);
-        this.setState({ storeProducts: [...data.data], filteredProducts: [...data.data], price: data.price, min: data.price,max: data.price,})
+        this.setState({ 
+          storeProducts: [...data.data], 
+          filteredProducts: [...data.data], 
+          price: data.price, 
+         // max: data.price
+        })
         console.log(this.state.storeProducts);
-        console.log(this.state.price);
+        //console.log(this.state.price);
+
+        //let maxPrice = Math.max(...storeProducts.map(item => item.price));
+
+        //this.setState(
+         // {
+        
+         //   price: maxPrice,
+          //  max: maxPrice
+         // })
+        
+
+
 
       });
 
@@ -63,6 +80,8 @@ class ProductProvider extends Component {
 
   // set products
   setProducts = () => {
+
+    let price = this.state.price;
 
     //const { storeProducts, price, company, shipping, search } = this.state;
    
@@ -74,7 +93,7 @@ class ProductProvider extends Component {
     this.setState(
       {
         //storeProducts,
-        filteredProducts: this.state.storeProducts,
+       // filteredProducts: this.state.storeProducts,
         //featuredProducts,
         cart: this.getStorageCart(),
         singleProduct: this.getStorageProduct(),
